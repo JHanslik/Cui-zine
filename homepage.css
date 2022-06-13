@@ -49,42 +49,80 @@ header .botheader h2 {
     padding-bottom: 150px;
 }
 
+main {
+    padding: 50px 8% 50px 8%;
+}
 main a {
     text-decoration: none;
 }
 main .article {
     display: flex;
+    margin: 25px 30px 0 0;;
 }
 main img {
-    width: 200px;
+    width: 220px;
+    margin-right: 25px;
+}
+.pates {
+    margin-bottom: 20px;
 }
 main .article p {
     font-weight: 300;
+    line-height: 25px;
 }
 main h3 {
     text-align: center;
     font-size: 30px;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 main .flex {
     display: flex;
+    align-items: center;
 }
 main .derniersarticles {
-    width: 70%;
+    width: 82%;
 }
 main h4 {
     font-family: 'Courgette', cursive;
     font-size: 25px;
+    margin-bottom: 15px;
+}
+main .previous {
+    margin-top: 50px;
+    color: #5c6062;
 }
 main aside {
-    width: 30%;
+    width: 18%;
 }
 main aside form {
     display: flex;
     flex-direction: column;
 }
+main h5{
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    margin: 15px 0 10px 0   ;
+}
 .search {
     height: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #788087;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+    border: 1px solid;
+    border-color: #d3d8de;
+    border-radius: 3px;
+}
+.submit {
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    border-radius: 3px;
 }
 main aside img {
     width: 20px;
@@ -92,6 +130,6 @@ main aside img {
 }
 
 footer img {
-    width: 20px;
-    margin: 15px;
+    width: 15px;
+    margin: 8px;
 }
