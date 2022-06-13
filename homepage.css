@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Courgette', cursive; */
+/* font-family: 'Oswald', sans-serif; */
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.884) ), url(./img/header.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 0% 50%;
+}
+header .topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid #626464 1px;
+}
+header .topheader h2 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 35px;
+}
+header .topheader nav a {
+    text-decoration: none;
+    color: #6c6967;
+}
+header .topheader nav .home {
+    color: #c5c2c3;
+}
+header .botheader {
+    text-align: center;
+}
+header .botheader img {
+    width: 80px;
+    padding-top: 60px;
+}
+header .botheader h1 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 50px ;
+    padding: 10px 0 10px 0;
+}
+header .botheader h2 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 33px ;
+    padding-bottom: 150px;
+}
+
+main a {
+    text-decoration: none;
+}
+main .article {
+    display: flex;
+}
+main img {
+    width: 200px;
+}
+main .article p {
+    font-weight: 300;
+}
+main h3 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+main .flex {
+    display: flex;
+}
+main .derniersarticles {
+    width: 70%;
+}
+main h4 {
+    font-family: 'Courgette', cursive;
+    font-size: 25px;
+}
+main aside {
+    width: 30%;
+}
+main aside form {
+    display: flex;
+    flex-direction: column;
+}
+.search {
+    height: 30px;
+}
+main aside img {
+    width: 20px;
+    margin: 15px;
+}
+
+footer img {
+    width: 20px;
+    margin: 15px;
+}

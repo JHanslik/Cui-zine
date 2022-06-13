@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="homepage.css">
 </head>
 <body>
@@ -12,7 +13,7 @@
         <section class="topheader">
             <h2>Cui'zine</h2>
             <nav>
-                <a href="Homepage.html">Acceuil</a>
+                <a href="Homepage.html" class="home">Acceuil</a>
                 <a href="team.html">Équipe</a>
                 <a href="post.html">Blog</a>
                 <a href="contact.html">Contact</a>
@@ -24,28 +25,110 @@
             <h2>Le mag cuisine</h2>
         </section>
     </header>
+
     <main>
-        <section class="derniersarticles">
-            <h3>Derniers articles</h3>
-            <div class="articles">
+        <h3>Derniers articles</h3>
+        <div class="flex">
+            <section class="derniersarticles">
                 <article class="article">
-                    <!-- Image devant en css avec :before -->
-                    <h3>Chez Suzette, la nouvelle crêperie qui fait parler d'elle.</h3>
-                    <p>La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin !</p>
+                    <img src="img/articles/suzette/suzette-small.jpg" alt="Crêpes">
+                    <div>                        
+                        <h4>Chez Suzette, la nouvelle crêperie qui fait parler d'elle.</h4>
+                        <p>La franchise "Chez Suzette" qui fait un carton chez les bretons ouvre son premier restaurant à Paris dans le quartier latin. Antoine de Cui'zine a testé pour vous les saveurs sucrées, salées au froment ou au sarrazin !</p>
+                    </div>
                 </article>
                 <article class="article">
-                    <h3>Le Métro dessert.</h3>
-                    <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. À voir absolument, mais qu'en est-il d'y aller pour manger ? Clémentine entre en gare et nous donne son avis.</p>
+                    <img src="img/articles/metro/metro-small.jpg" alt="Tartelette framboise.">
+                    <div>                        
+                        <h4>Le Métro dessert.</h4>
+                        <p>Germain est ferrovipathe (ndlr: fan de train), son fils Maxime est pâtissier. Ils ont décidé de réunir leur deux passions dans un restaurant à la déco inspiré du métro parisien. À voir absolument, mais qu'en est-il d'y aller pour manger ? Clémentine entre en gare et nous donne son avis.</p>
+                    </div>
                 </article>
                 <article class="article">
-                    <h3>Vitaly, le végan Italien.</h3>
-                    <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                    <img src="img/articles/vitaly/vitaly-small.jpg" alt="Pâtes">
+                    <div>                        
+                        <h4>Vitaly, le végan Italien.</h4>
+                        <p>Quand on pense italien, on pense lasagne et jambon de Parme. Ils l'ont fait, les saveurs de l'Italie à portée des herbivores. Cette fois, c'est moi Tony qui vais le tester pour vous.</p>
+                    </div>
                 </article>
-                <p class="previous"><< voir les articles précédents</p>
+                <a href="" class="previous">«voir les articles précédents</a>
+            </section>
+            <aside>
+                <section class="recherchefield">
+                    <h5>Recherche</h5>
+                    <form> 
+                        <input type="text" name="Recherche" class="search" placeholder="Recherche...">
+                        <input type="submit" name="submit" class="submit" value="Ok">
+                    </form>
+                </section>
+                <section class="recherchefield">
+                    <h5>Newsletter</h5>
+                    <form>                        
+                        <input type="text" name="Newletter" class="search" placeholder="Email...">
+                        <input type="submit" name="submit" class="submit" value="S'inscrire">
+                    </form>
+                </section>
+                <section class="share">
+                    <h5>Partager</h5>
+                    <div class="icons">
+                        <a href="https://www.facebook.com/rickroll548/">
+                            <img src="img/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/p/CGh4a0iASGS/?hl=fr">
+                            <img src="img/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                            <img src="img/youtube.png" alt="Youtube">
+                        </a>
+                        <a href="https://twitter.com/rickastley">
+                            <img src="img/twitter.png" alt="Twitter">
+                        </a>
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <section class="lists">
+            <h3>Catégories</h3>
+            <nav>
+                <a href="#">Revues</a>
+                <a href="recipe.html">Recettes</a>
+                <a href="#">Découvertes</a>
+            </nav>
+        </section>
+        <section class="lists">
+            <h3>Archives</h3>
+            <nav>
+                <a href="#">2019</a>
+                <a href="#">2018</a>
+                <a href="#">2017</a>
+            </nav>
+        </section>
+        <section class="share">
+            <div class="recherchefield2">
+                <h4>Newsletter</h4>
+                <input type="text" name="Newletter" class="search" placeholder="Email...">
+                <input type="submit" name="submit" class="submit" value="S'inscrire">
+            </div>
+            <div>
+                <h4>Partager</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/rickroll548/">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/p/CGh4a0iASGS/?hl=fr">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img src="img/youtube.png" alt="Youtube">
+                    </a>
+                    <a href="https://twitter.com/rickastley">
+                        <img src="img/twitter.png" alt="Twitter">
+                    </a>
             </div>
         </section>
-        
-    </main>
-    
+    </footer>
 </body>
 </html>
