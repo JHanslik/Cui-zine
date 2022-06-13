@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Courgette', cursive; /
+/ font-family: 'Oswald', sans-serif; */
+
+/* body {
+    font-family: 'Courgette', sans-serif;
+} */
+
 header {
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.884) ), url(./img/header.jpg) no-repeat;
     height: 600px;
@@ -13,6 +21,7 @@ h1 {
 .contact h2 {
     font-weight: bold;
     font-size: 35px;
+    font-family: 'Courgette', sans-serif;
 }
 
 .menu {
@@ -20,7 +29,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid rgb(221, 221, 221);
+    border-bottom: 1px solid #626464;
     color: white;
     padding: 0 40px;
 }
@@ -28,6 +37,7 @@ h1 {
 .menu h1 {
     font-weight: bold;
     font-size: 35px;
+    font-family: 'Courgette', sans-serif;
 }
 
 .menu nav a {
@@ -35,6 +45,7 @@ h1 {
     color: white;
     font-size: 20px;
     padding-left: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -47,6 +58,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     color: white;
+    font-family: 'Courgette', sans-serif;   
 }
 
 .contact {
@@ -94,25 +106,110 @@ h1 {
     font-size: 20px;
     font-weight: bold;
     padding-bottom: 5px;
+    font-family: 'Courgette', sans-serif;   
 }
 
-input {
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    width: 100%;
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-button {
-    padding: 10px;
-    background-color: transparent;
-    border-radius: 5px;
-    width: 100%;
-
+.search {
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #788087;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+    border: 1px solid;
+    border-color: #d3d8de;
+    border-radius: 3px;
 }
+.submit {
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.icones {
+    padding-top: 30px;
+}
+
+.icones img {
+    padding: 25px;
+}
+
+
 
 footer {
     height: 350px;
     background-color: black;
     color: white;
 }
+
+
+footer img {
+    filter: invert(1);
+}
+
+footer div {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer_list a:hover {
+    font-size: 17px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer_title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Courgette', sans-serif;   
+    padding-bottom: 20px;
+}
+
+footer .submit {
+    height: 44px;
+    color: white;
+    border: 1px solid white;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+footer .submit:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+footer form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+

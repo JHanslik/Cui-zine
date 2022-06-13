@@ -49,22 +49,26 @@
         <div class="info">
             <article class="find">
                 <h3>Recherche</h3>
-                <input type="text" value="Recherche..."><br>
-                <button>Ok</button>
+                <form> 
+                    <input type="text" name="Recherche" class="search" placeholder="Recherche...">
+                    <input type="submit" name="submit" class="submit" value="Ok">
+                </form>
             </article>
 
             <article class="news">
                 <h3>Newsletter</h3>
-                <input type="text" value="Email..."><br>
-                <button>S'inscrire</button>
+                <form>                        
+                    <input type="text" name="Newletter" class="search" placeholder="Email...">
+                    <input type="submit" name="submit" class="submit" value="S'inscrire">
+                </form>
             </article>
 
-            <article>
+            <article class="icones">
                 <h3>Partager</h3>
-                <img src="#" alt="Facebook">
-                <img src="#" alt="Instagram">
-                <img src="#" alt="YouTube">
-                <img src="#" alt="Twitter">
+                <a href=""><img src="./img/facebook.png" alt="Facebook" width="30px"></a>
+                <a href=""><img src="./img/instagram.png" alt="Instagram" width="30px"></a>
+                <a href=""><img src="./img/youtube.png" alt="YouTube" width="30px"></a>
+                <a href=""><img src="./img/twitter.png" alt="Twitter" width="30px"></a>
             </article>
         </div>
 
@@ -72,27 +76,29 @@
 
     <footer>
         <div>
-            <article>
-                <h2>Categories</h2>
+            <article class="footer_list">
+                <h2 class="footer_title">Categories</h2>
                 <a href="#">Revues</a>
                 <a href="#">Recettes</a>
                 <a href="#">Decouvertes</a>
             </article>
-            <article>
-                <h2>Archives</h2>
+            <article class="footer_list">
+                <h2 class="footer_title">Archives</h2>
                 <a href="#">2019</a>
                 <a href="#">2018</a>
                 <a href="#">2017</a>
             </article>
             <article>
-                <h3>Newsletter</h3>
-                <input type="text" value="Email...">
-                <button>S'inscrire</button>
-                <h3>Partager</h3>
-                <img src="#" alt="Facebook">
-                <img src="#" alt="Instagram">
-                <img src="#" alt="YouTube">
-                <img src="#" alt="Twitter">
+                <h3 class="footer_title">Newsletter</h3>
+                <form>
+                <input type="text" name="Newletter" class="search" placeholder="Email...">
+                <input type="submit" name="submit" class="submit" value="S'inscrire">
+                </form>
+                <h3 class="footer_title">Partager</h3>
+                <a href=""><img src="./img/facebook.png" alt="Facebook" width="30px"></a>
+                <a href=""><img src="./img/instagram.png" alt="Instagram" width="30px"></a>
+                <a href=""><img src="./img/youtube.png" alt="YouTube" width="30px"></a>
+                <a href=""><img src="./img/twitter.png" alt="Twitter" width="30px"></a>
             </article>
         </div>
     </footer>
