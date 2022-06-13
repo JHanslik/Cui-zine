@@ -1,0 +1,11 @@
+header {
+    background: url(./img/header.jpg) no-repeat;
+    height: 500px;
+}
+
+.menu {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
