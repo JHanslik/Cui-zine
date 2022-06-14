@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Courgette', cursive; /
+/ font-family: 'Oswald', sans-serif; */
+
+/* body {
+    font-family: 'Courgette', sans-serif;
+} */
+
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.884) ), url(./img/team/team.jpg) no-repeat;
+    height: 600px;
+    background-size: cover;
+    background-position: 20%;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+.menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #626464;
+    color: white;
+    padding: 0 40px;
+}
+
+.menu h1 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Courgette', sans-serif;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-left: 20px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+}
+
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-family: 'Courgette', sans-serif;   
+}
+
+.welcome h2 {
+    padding-top: 15px;
+    font-size: 35px;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 50px
+}
+
+.content_btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.content_btn button {
+    padding: 5px 25px;
+    background-color: #bbbbbb;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    border: none;
+    width: 165px;
+    margin-right: 20px;
+}
+
+
+.content_left h2 {
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Courgette', sans-serif;
+    padding-bottom: 60px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+
+.team img {
+    border-radius: 150px;
+}
+
+.team h2 {
+    font-weight: bold;
+    font-family: 'Courgette', sans-serif;
+    font-size: 30px;
+    padding: 10px 10px;
+}
+
+.team p {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    padding-bottom: 20px;
+}
+
+.team article {
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.find {
+    width: 100%;
+}
+
+.find, .news {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    font-family: 'Courgette', sans-serif;   
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search {
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    color: #788087;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+    border: 1px solid;
+    border-color: #d3d8de;
+    border-radius: 3px;
+}
+.submit {
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.icones {
+    padding-top: 30px;
+}
+
+.icones img {
+    padding: 25px;
+}
+
+
+
+footer {
+    height: 350px;
+    background-color: black;
+    color: white;
+}
+
+
+footer img {
+    filter: invert(1);
+}
+
+footer div {
+    display: flex;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.footer_list a:hover {
+    font-size: 17px;
+}
+
+footer a {
+    text-decoration: underline;
+    font-family: 'Oswald', sans-serif;  
+    color: white;
+}
+
+.footer_title {
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Courgette', sans-serif;   
+    padding-bottom: 20px;
+}
+
+footer .submit {
+    height: 44px;
+    color: white;
+    border: 1px solid white;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+footer .submit:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+
+footer form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+
