@@ -35,6 +35,11 @@ h1 {
     font-family: 'Courgette', sans-serif;
 }
 
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
 
 .menu nav a {
     text-decoration: none;
@@ -126,6 +131,37 @@ h1 {
     padding: 6px 15px;
     text-align: center;
     font-family: 'Oswald', sans-serif;
+}
+
+.sponsored {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.sponsored_img {
+    position: relative;
+}
+
+
+
+
+.sponsored_img p {
+    position: absolute;
+    width: 40%;
+    top: 63%;
+    color: black;
+    background-color: #989b9e;
+    left: 10px;
+    padding: 6.5px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.sponsored img {
+    margin: 10px 10px 40px 10px;
 }
 
 .info {
