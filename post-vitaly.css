@@ -35,7 +35,6 @@ header .botheader {
     justify-content: center;
     align-items: center;
     height: 394px;
-    width: %;
 }
 header .botheader img {
     width: 80px;
@@ -245,9 +244,6 @@ footer .submit:hover {
     background-color: white;
     color: black;
     transition: 0.5s;
-}
-footer .icons {
-    
 }
 footer .icons a{
     text-decoration: none;
