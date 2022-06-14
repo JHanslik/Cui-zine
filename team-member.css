@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+/* font-family: 'Courgette', cursive; */
+/* font-family: 'Oswald', sans-serif; */
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+header {
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.884) ), url(./img/header.jpg) no-repeat;
+    background-size: 100%;
+    background-position: 0% 50%;
+}
+header a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #6c6967;
+    padding: 0 10px;
+}
+header .topheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: solid #626464 1px;
+}
+header .topheader h2 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 35px;
+}
+header .topheader nav .home {
+    color: #c5c2c3;
+}
+header .botheader {
+    text-align: center;
+    padding-bottom: 300px;
+}
+header .botheader img {
+    width: 80px;
+    padding-top: 60px;
+}
+header .botheader h1 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 50px ;
+    padding: 10px 0 10px 0;
+}
+header .botheader h2 {
+    font-family: 'Courgette', cursive;
+    color: white;
+    font-size: 33px ;
+}
+
+main {
+    display: flex;
+    padding: 50px 8% 50px 8%;
+}
+main .leftmain {
+    width: 82%;
+    margin-right: 40px;
+}
+main .leftmain img {
+    width: 35%;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+main p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 20px;
+}
+
+main a {
+    text-decoration: none;
+}
+main aside {
+    width: 18%;
+}
+main aside form {
+    display: flex;
+    flex-direction: column;
+}
+main h5{
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    margin: 15px 0 10px 0   ;
+}
+.search {
+    height: 30px;
+    font-family: 'Oswald', sans-serif;
+    color: #788087;
+    font-size: 17px;
+    font-weight: 500;
+    padding-left: 10px;
+    border: 1px solid;
+    border-color: #d3d8de;
+    border-radius: 3px;
+}
+.submit {
+    height: 40px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.submit:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+main aside img {
+    width: 20px;
+    margin: 15px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 0 70px 0;
+}
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+footer a {
+    color: #c4c4c4;
+    font-weight: 300;
+    line-height: 25px;
+}
+footer h3 {
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+footer h4 {
+    font-family: 'Courgette', cursive;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.sharefooter {
+    margin-top: 30px;
+}
+footer .search {
+    margin-right: 0;
+}
+.searchfield2 {
+    display: flex;
+}
+footer .submit {
+    color: white;
+    font-weight: 400;
+    height: 34px;
+    margin-left: 0;
+    cursor: pointer;
+}
+footer .submit:hover {
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+footer .icons a{
+    text-decoration: none;
+}
+footer img {
+    width: 15px;
+    margin: 8px;
+    filter: invert();
+}
