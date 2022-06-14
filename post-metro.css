@@ -6,7 +6,7 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 header {
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.884) ), url(./img/header.jpg) no-repeat;
+    background: url(./img/articles/metro/metro-header.jpg) no-repeat;
     background-size: 100%;
     background-position: 0% 50%;
 }
@@ -16,6 +16,7 @@ header .topheader {
     align-items: center;
     padding: 20px;
     border-bottom: solid #626464 1px;
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9) );
 }
 header .topheader h2 {
     font-family: 'Courgette', cursive;
@@ -30,7 +31,11 @@ header .topheader nav .home {
     color: #c5c2c3;
 }
 header .botheader {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 394px;
+    width: %;
 }
 header .botheader img {
     width: 80px;
@@ -40,7 +45,11 @@ header .botheader h1 {
     font-family: 'Courgette', cursive;
     color: white;
     font-size: 50px ;
-    padding: 10px 0 10px 0;
+    height: fit-content;
+    padding: 0 50px;
+    border-radius: 2px;
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) );
+    /* padding: 10px 0 10px 0; */
 }
 header .botheader h2 {
     font-family: 'Courgette', cursive;
@@ -51,48 +60,101 @@ header .botheader h2 {
 
 main {
     padding: 50px 8% 50px 8%;
+    display: flex;
 }
 main a {
     text-decoration: none;
-}
-main .article {
-    display: flex;
-    margin: 25px 30px 0 0;;
-    text-decoration: none;
-    color: black;
 }
 main img {
     width: 220px;
     margin-right: 25px;
 }
-.pates {
+main p {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 25px;
     margin-bottom: 20px;
 }
-main .article p {
-    font-weight: 300;
-    line-height: 25px;
+main .intro p {
+    padding-left: 35px;
+    position: relative;
+}
+main .intro p::before {
+    content: 'G';
+    font-size: 70px;
+    position: absolute;
+    color: #AAAAAA;
+    font-weight: 500;
+    left: -5px;
 }
 main h3 {
-    text-align: center;
+    font-family: 'Courgette', cursive;
     font-size: 30px;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
 }
-main .flex {
-    display: flex;
-    align-items: center;
-}
-main .derniersarticles {
+main .leftmain {
     width: 82%;
+    margin-right: 40px;
 }
 main h4 {
     font-family: 'Courgette', cursive;
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
-main .previous {
-    margin-top: 50px;
-    color: #5c6062;
+main .conclusion p {
+    margin-bottom: 40px
+}
+main .about {
+    border-top: solid #F1F1F1 2px;
+    border-bottom: solid #F1F1F1 2px;
+    display: flex;
+    justify-content: center;
+    padding: 40px 15% 40px 20%;
+    align-items: center;
+}
+main .about img {
+    border-radius: 50%;
+}
+main .commentform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+main .commentform div {
+    width: 50%;
+}
+main .commentform h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+main .commentform .form {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: solid #dbdfe4 2px;
+    border-radius: 3px;
+}
+main .comment {
+    padding: 0 10%;
+}
+main .comment img {
+    width: 80px;
+    height: 80px;
+}
+main .comment1 {
+    display: flex;
+}
+main .comment2 {
+    display: flex;
+    margin-left: 105px;
+}
+main .comment2 img {
+    opacity: 0.5;
 }
 main aside {
     width: 18%;
