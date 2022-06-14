@@ -11,6 +11,9 @@ header {
     background-position: 0% 50%;
     padding-bottom: 150px;
 }
+.topheader div {
+    display: none;
+}
 header a {
     text-decoration: none;
     font-size: 20px;
@@ -265,6 +268,9 @@ footer img {
         background-size: 130%;
         background-position: center;
         padding-bottom: 150px;
+    }
+    .topheader div {
+        display: block;
     }
     main {
         padding: 50px 15px 50px 15px;

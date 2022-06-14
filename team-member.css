@@ -10,6 +10,9 @@ header {
     background-size: 100%;
     background-position: center;
 }
+.topheader div {
+    display: none;
+}
 header a {
     text-decoration: none;
     font-size: 20px;
@@ -182,6 +185,9 @@ footer img {
     header {
         background-size: 130%;
         background-position: center;
+    }
+    .topheader div {
+        display: block;
     }
     .botheader {
         padding-bottom: 150px;

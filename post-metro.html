@@ -7,6 +7,7 @@
     <title>Metro</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="post-metro.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="hamburger.css">
 </head>
 <body>
     <header>
@@ -15,11 +16,31 @@
                 <h2>Cui'zine</h2>
             </a>
             <nav>
-                <a href="Homepage.html" class="home">Acceuil</a>
+                <a href="Homepage.html" class="home">Accueil</a>
                 <a href="team.html">Équipe</a>
                 <a href="post.html">Blog</a>
                 <a href="contact.html">Contact</a>
             </nav>
+            <div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <a href="Homepage.html" class="home">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="team.html">Équipe</a>
+                    </li>
+                    <li>
+                        <a href="team-member.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="botheader">
             <h1>Le Métro dessert</h1>
