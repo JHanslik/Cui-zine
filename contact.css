@@ -18,6 +18,15 @@ h1 {
     font-size: 35px;
 }
 
+
+.menu .active {
+    color: #c5c2c3;
+}
+
+header .welcome h2 {
+    font-size: 45px;
+}
+
 .contact h2 {
     font-weight: bold;
     font-size: 35px;
@@ -40,13 +49,27 @@ h1 {
     font-family: 'Courgette', sans-serif;
 }
 
-.menu nav a {
+.menu a {
     text-decoration: none;
     color: white;
+}
+
+.menu nav a {
+    text-decoration: none;
+    color: #6c6967;
     font-size: 20px;
     padding-left: 20px;
     font-weight: 300;
     font-family: 'Oswald', sans-serif;
+}
+
+.menu nav a:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+.menu .active {
+    color: #c5c2c3;
 }
 
 

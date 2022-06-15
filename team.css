@@ -18,6 +18,9 @@ h1 {
     font-size: 35px;
 }
 
+header .welcome .w_title {
+    font-size: 45px
+}
 
 .menu {
     height: 60px;
@@ -53,6 +56,10 @@ h1 {
 .menu nav a:hover {
     color: white;
     transition: 0.5s;
+}
+
+.menu .active {
+    color: #c5c2c3;
 }
 
 
