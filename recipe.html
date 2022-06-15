@@ -5,162 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe</title>
-    <link rel="stylesheet" href="./recipe.css">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="header-footer.css">
+    <link rel="stylesheet" href="./recipe.css">
+    <link rel="stylesheet" media="screen and (max-width: 992px)" href="hamburger.css">
 </head>
 <body>
     
     <header>
-        <section class="menu">
-            <h1><a href="/homepage.html">Cui'zine</a></h1>
+        <section class="topheader">
+            <a href="homepage.html">                
+                <h2>Cui'zine</h2>
+            </a>
             <nav>
-                <a href="/homepage.html">Acceuil</a>
-                <a href="/team.html">Equipe</a>
-                <a href="/post.html">Blog</a>
-                <a href="/contact.html">Contact</a>
+                <a href="Homepage.html" class="home">Accueil</a>
+                <a href="team.html">Équipe</a>
+                <a href="team-member.html">Blog</a>
+                <a href="contact.html">Contact</a>
             </nav>
+            <div>
+                <input id="menu-toggle" type="checkbox" />
+                <label class='menu-button-container' for="menu-toggle">
+                    <div class='menu-button'></div>
+                </label>
+                <ul class="menu">
+                    <li>
+                        <a href="Homepage.html" class="home">Acceuil</a>
+                    </li>
+                    <li>
+                        <a href="team.html">Équipe</a>
+                    </li>
+                    <li>
+                        <a href="team-member.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </section>
-
-        <section class="welcome">
-            <article>
-            <!-- <img src="./img/logo_square_white.png" alt="logo" width="150px"> -->
-            <h1>Paëlla</h1>
-            <h2>Le plat fimilial de votre été 2019</h2>
-            </article>
+        <section class="botheader">
+            <img src="img/logo_square_white.png" alt="Logo blanc">
+            <h1>Cui'zine</h1>
+            <h2>Le mag cuisine</h2>
         </section>
     </header>
-
-        <section class="content">
-            <div class="content_left">
-                    <h2>Paëlla</h2>
-                    <p class="content_ing">6 moules</p>
-                    <p class="content_ing">1/2 poulet</p><br>
-                    <p class="content_ing">125g de porc maigre</p><br>
-                    <p class="content_ing">60g de chorizo</p><br>
-                    <p class="content_ing">Amandes d'Espagne</p><br>
-                    <p class="content_ing">4 crevettes</p><br>
-                    <p class="content_ing">1/2 verre d'huile d'olive</p><br>
-                    <p class="content_ing">3 cuillères de vin</p><br>
-                    <p class="content_ing">1 oignon</p><br>
-                    <p class="content_ing">2 gousses d'ails</p><br>
-                    <p class="content_ing">2 tomates</p><br>
-                    <p class="content_ing">1 piment doux</p><br>
-                    <p class="content_ing">250g de riz</p><br>
-                    <p class="content_ing">Du persil</p><br>
-                    <p class="content_ing">Poivre de Cayenne</p><br>
-                    <p class="content_ing">2 verre de bouillon</p><br>
-                    <p class="content_ing">Poivre noir</p>
-                    <p class="content_ing">Sel</p><br>
-                    <p class="content_ing">125g de getit pois</p>
+    <main>
+        <div class="leftmain">
+            <div class="lefttitle">
+                <h3>Paëlla</h3>
+                <article class="content_btn">
+                            <button><img src="./img/watch.png" alt="watch" width="30px">Préparation - 2h</button>
+                            <button><img src="/img/hourglass.png" alt="hourglass" width="30px">Cuisson - 1h</button>
+                        </article>
             </div>
-
+            <section class="content">
+                <div class="content_left">
+                        <p class="content_ing">6 moules</p>
+                        <p class="content_ing">1/2 poulet</p><br>
+                        <p class="content_ing">125g de porc maigre</p><br>
+                        <p class="content_ing">60g de chorizo</p><br>
+                        <p class="content_ing">Amandes d'Espagne</p><br>
+                        <p class="content_ing">4 crevettes</p><br>
+                        <p class="content_ing">1/2 verre d'huile d'olive</p><br>
+                        <p class="content_ing">3 cuillères de vin</p><br>
+                        <p class="content_ing">1 oignon</p><br>
+                        <p class="content_ing">2 gousses d'ails</p><br>
+                        <p class="content_ing">2 tomates</p><br>
+                        <p class="content_ing">1 piment doux</p><br>
+                        <p class="content_ing">250g de riz</p><br>
+                        <p class="content_ing">Du persil</p><br>
+                        <p class="content_ing">Poivre de Cayenne</p><br>
+                        <p class="content_ing">2 verre de bouillon</p><br>
+                        <p class="content_ing">Poivre noir</p>
+                        <p class="content_ing">Sel</p><br>
+                        <p class="content_ing">125g de getit pois</p>
+                </div>            
                 <article class="etapes">
-                    <article class="content_btn">
                     
-                        <button><img src="./img/watch.png" alt="watch" width="30px">Préparation - 2h</button>
-                        <button><img src="/img/hourglass.png" alt="hourglass" width="30px">Cuisson - 1h</button>
-                    </article>
-                    <h3>Etape 1</h3>
+                    <h5>Etape 1</h5>
                     <p>Verser la moitié de l'huile dans une trés large poêle, y faire dorer le poulet, le porc et la saucisse jusq'à micuisson, puis les retirer.</p>
-                    <h3>Etape 2</h3>
+                    <h5>Etape 2</h5>
                     <p>Pendant ce temps, faire ouvrir les moules et les coques dans le vin blanc avec 2 cuillères à soupe d'oignons émincés et de persil haché.</p>
-                    <h3>Etape 3</h3>
+                    <h5>Etape 3</h5>
                     <p>Les mettre de côté et réserver le jus filtré</p>
-                    <h3>Etape 4</h3>
+                    <h5>Etape 4</h5>
                     <p>Rajouter les crevettes ou langoustines dans la poêle avec le viande, les faire sauter puis retirer le tout et réserver.</p>
-                    <h3>Etape 5</h3>
+                    <h5>Etape 5</h5>
                     <p>Remettre en peu d'huile et faire suer l'oignon d'Espagne et 2 gousses d'ail émincées dans la poêle.</p>
-                    <h3>Etape 6</h3>
+                    <h5>Etape 6</h5>
                     <p>Rajouter les tomates peléees et coupées, les piments émincés et laisser cuire doucement pendant 5 min, en remuant constamment.</p>
-                    <h3>Etape 7</h3>
+                    <h5>Etape 7</h5>
                     <p>Retirer tout le mélange de la poêle, et rajouter le reste d'huile</p>
-                    <h3>Etape 8</h3>
+                    <h5>Etape 8</h5>
                     <p>Faire chauffer d'huile et y verser le riz.</p>
-                    <h3>Etape 9</h3>
+                    <h5>Etape 9</h5>
                     <p>Remuer à la spatule et laisser le riz devenir transparent et crépiter.</p>
-                    <h3>Etape 10</h3>
+                    <h5>Etape 10</h5>
                     <p>A ce moment, verser le bouillon trés chaud, l'eau des moules et le safran délayé dans un peu d'eau chaude.</p>
-                    <h3>Etape 11</h3>
+                    <h5>Etape 11</h5>
                     <p>Remettre tous les ingrédient sauf les petits pois.</p>
-                    <h3>Etape 12</h3>
+                    <h5>Etape 12</h5>
                     <p>Porter à ebullition doucement et laisser mijoter 15 min sans remuer.</p>
-                    <h3>Etape 13</h3>
+                    <h5>Etape 13</h5>
                     <p>Rajouter les petits pois et le reste de la langouste, puis placer en surface quelques crevettes, moules, coques et morceaux de poulet.</p>
-                    <h3>Etape 14</h3>
+                    <h5>Etape 14</h5>
                     <p>Couvrir, et prolongez la cuisson de 5 à 10 min, le riz doit avoir absordé tout le jus gardant une texture ferme.</p>
+                </article>            
+            </section>
+            <div class="sponsored">
+                <article class="sponsored_img">
+                    <img src="./img/recipes/sponsored/dessert1.jpg" alt="dessert">
+                    <p>Lien sponsorisé</p>
                 </article>
+                <article class="sponsored_img">
+                    <img src="./img/recipes/sponsored/side1.jpg" alt="dessert">
+                    <p>Lien sponsorisé</p>
+                </article>
+                <article class="sponsored_img">
+                    <img src="./img/recipes/sponsored/dessert2.jpg" alt="dessert">
+                    <p>Lien sponsorisé</p>
+                </article>  
             </div>
-
-            <div class="info">
-                <article class="find">
-                    <h3>Recherche</h3>
-                    <form> 
-                        <input type="text" name="Recherche" class="search" placeholder="Recherche...">
-                        <input type="submit" name="submit" class="submit" value="Ok">
-                    </form>
-                </article>
-
-                <article class="news">
-                    <h3>Newsletter</h3>
-                    <form>                        
-                        <input type="text" name="Newletter" class="search" placeholder="Email...">
-                        <input type="submit" name="submit" class="submit" value="S'inscrire">
-                    </form>
-                </article>
-
-                <article class="icones">
-                    <h3>Partager</h3>
-                    <a href=""><img src="./img/facebook.png" alt="Facebook" width="30px"></a>
-                    <a href=""><img src="./img/instagram.png" alt="Instagram" width="30px"></a>
-                    <a href=""><img src="./img/youtube.png" alt="YouTube" width="30px"></a>
-                    <a href=""><img src="./img/twitter.png" alt="Twitter" width="30px"></a>
-                </article>
-            </div>
-        </section>
-    
-        <div class="sponsored">
-        <article class="sponsored_img">
-            <img src="/img/recipes/sponsored/dessert1.jpg" alt="dessert" width="250px">
-            <p>Lien sponsorisé</p>
-        </article>
-        <article class="sponsored_img">
-            <img src="/img/recipes/sponsored/side1.jpg" alt="dessert" width="250px">
-            <p>Lien sponsorisé</p>
-        </article>
-        <article class="sponsored_img">
-            <img src="/img/recipes/sponsored/dessert2.jpg" alt="dessert" width="250px">
-            <p>Lien sponsorisé</p>
-        </article>  
-    </div>
-
+        </div>
+        <aside>
+            <section class="recherchefield">
+                <h5>Recherche</h5>
+                <form> 
+                    <input type="text" name="Recherche" class="search" placeholder="Recherche...">
+                    <input type="submit" name="submit" class="submit" value="Ok">
+                </form>
+            </section>
+            <section class="recherchefield">
+                <h5>Newsletter</h5>
+                <form>                        
+                    <input type="text" name="Newletter" class="search" placeholder="Email...">
+                    <input type="submit" name="submit" class="submit" value="S'inscrire">
+                </form>
+            </section>
+            <section class="share">
+                <h5>Partager</h5>
+                <div class="icons">
+                    <a href="https://www.facebook.com/rickroll548/">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/p/CGh4a0iASGS/?hl=fr">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img src="img/youtube.png" alt="Youtube">
+                    </a>
+                    <a href="https://twitter.com/rickastley">
+                        <img src="img/twitter.png" alt="Twitter">
+                    </a>
+                </div>
+            </section>
+        </aside>
+    </main>
 
     <footer>
-        <div>
-            <article class="footer_list">
-                <h2 class="footer_title">Categories</h2>
+        <section class="lists">
+            <h3>Catégories</h3>
+            <nav>
                 <a href="#">Revues</a>
-                <a href="#">Recettes</a>
-                <a href="#">Decouvertes</a>
-            </article>
-            <article class="footer_list">
-                <h2 class="footer_title">Archives</h2>
+                <a href="recipe.html">Recettes</a>
+                <a href="#">Découvertes</a>
+            </nav>
+        </section>
+        <section class="lists">
+            <h3>Archives</h3>
+            <nav>
                 <a href="#">2019</a>
                 <a href="#">2018</a>
                 <a href="#">2017</a>
-            </article>
-            <article>
-                <h3 class="footer_title">Newsletter</h3>
-                <form>
-                <input type="text" name="Newletter" class="search" placeholder="Email...">
-                <input type="submit" name="submit" class="submit" value="S'inscrire">
-                </form>
-                <h3 class="footer_title">Partager</h3>
-                <a href=""><img src="./img/facebook.png" alt="Facebook" width="30px"></a>
-                <a href=""><img src="./img/instagram.png" alt="Instagram" width="30px"></a>
-                <a href=""><img src="./img/youtube.png" alt="YouTube" width="30px"></a>
-                <a href=""><img src="./img/twitter.png" alt="Twitter" width="30px"></a>
-            </article>
-        </div>
+            </nav>
+        </section>
+        <section class="share">
+            <div>
+                <h4>Newsletter</h4>
+                <div class="searchfield2">                    
+                    <input type="text" name="Newletter" class="search" placeholder="Email...">
+                    <input type="submit" name="submit" class="submit" value="S'inscrire">
+                </div>
+            </div>
+            <div>
+                <h4 class="sharefooter">Partager</h4>
+                <div class="icons">
+                    <a href="https://www.facebook.com/rickroll548/">
+                        <img src="img/facebook.png" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/p/CGh4a0iASGS/?hl=fr">
+                        <img src="img/instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                        <img src="img/youtube.png" alt="Youtube">
+                    </a>
+                    <a href="https://twitter.com/rickastley">
+                        <img src="img/twitter.png" alt="Twitter">
+                    </a>
+            </div>
+        </section>
     </footer>
 
 
