@@ -33,9 +33,6 @@ header .topheader h2 {
     color: white;
     font-size: 35px;
 }
-header .topheader nav .home {
-    color: #c5c2c3;
-}
 header .botheader {
     text-align: center;
     padding: 100px 0 200px;
